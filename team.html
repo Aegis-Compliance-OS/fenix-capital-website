@@ -26,28 +26,30 @@
   </nav>
 
   <!-- PAGE HERO -->
-  <section id="hero" style="min-height: 45vh; padding-bottom: 60px;">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-tag">The Team</div>
-    <h1 class="hero-headline" style="font-size: clamp(2.8rem, 6vw, 6rem);">
-      Operators who<br><em>know</em> the terrain.
-    </h1>
-    <p class="hero-sub" style="margin-top: 28px;">
-      Fenix was built by people who've sat across the table from DoD procurement offices, not just read about them.
-    </p>
+  <section id="hero" style="min-height: 45vh; padding-bottom: 64px; background: var(--section-alt);">
+    <div class="hero-content" style="padding-top: 40px;">
+      <div class="hero-tag" style="color: var(--ember);">
+        <span style="display:block; width:24px; height:1px; background:var(--ember);"></span>
+        The Team
+      </div>
+      <h1 style="font-family: var(--font-display); font-size: clamp(2.8rem, 6vw, 6rem); font-weight: 300; line-height: 0.97; color: var(--ink); max-width: 700px; margin-top: 8px;">
+        Operators who<br><em style="font-style:italic; color:var(--ember);">know</em> the terrain.
+      </h1>
+      <p style="margin-top: 28px; font-size: 1rem; color: var(--mid); max-width: 480px; line-height: 1.75;">
+        Fenix was built by people who've sat across the table from DoD procurement offices — not just read about them.
+      </p>
+    </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- TEAM SECTION -->
-  <section id="team" style="padding-top: 80px;">
+  <!-- TEAM -->
+  <section id="team">
     <div class="section-tag">Partners &amp; Advisors</div>
     <h2 class="section-title">Experience on <em>both</em> sides of the table.</h2>
 
-    <div class="team-grid" style="margin-top: 64px;">
+    <div class="team-grid">
 
-      <!-- Placeholder GP 1 — replace with real bios -->
       <div class="team-card fade-in">
         <div class="team-avatar">
           <div class="team-avatar-inner">GP</div>
@@ -59,10 +61,9 @@
         </p>
       </div>
 
-      <!-- Placeholder GP 2 -->
       <div class="team-card fade-in fade-in-delay-1">
         <div class="team-avatar">
-          <div class="team-avatar-inner" style="background: linear-gradient(135deg, var(--gold-dim), var(--carbon));">GP</div>
+          <div class="team-avatar-inner" style="background: linear-gradient(135deg, var(--gold-pale), var(--section-alt)); color: var(--gold);">GP</div>
         </div>
         <div class="team-name">General Partner</div>
         <div class="team-role">Partner</div>
@@ -71,10 +72,9 @@
         </p>
       </div>
 
-      <!-- Placeholder Advisor -->
       <div class="team-card fade-in fade-in-delay-2">
         <div class="team-avatar">
-          <div class="team-avatar-inner" style="background: linear-gradient(135deg, var(--steel), var(--off-black));">ADV</div>
+          <div class="team-avatar-inner" style="background: var(--section-alt); color: var(--mid);">ADV</div>
         </div>
         <div class="team-name">Senior Advisor</div>
         <div class="team-role">Strategic Advisor — Compliance</div>
@@ -83,10 +83,9 @@
         </p>
       </div>
 
-      <!-- Placeholder Advisor -->
       <div class="team-card fade-in fade-in-delay-3">
         <div class="team-avatar">
-          <div class="team-avatar-inner" style="background: linear-gradient(135deg, var(--steel), var(--off-black));">ADV</div>
+          <div class="team-avatar-inner" style="background: var(--section-alt); color: var(--mid);">ADV</div>
         </div>
         <div class="team-name">Senior Advisor</div>
         <div class="team-role">Strategic Advisor — Supply Chain</div>
@@ -97,31 +96,20 @@
 
     </div>
 
-    <!-- Values / working style -->
-    <div style="margin-top: 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--steel);">
-      <div style="background: var(--off-black); padding: 48px 40px;">
+    <!-- How we work -->
+    <div style="margin-top: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+      <div style="background: var(--ember-pale); border: 1px solid rgba(200,75,26,0.15); border-left: 3px solid var(--ember); padding: 44px 40px;">
         <div class="section-tag" style="margin-bottom: 16px;">How We Work</div>
-        <p style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 300; color: var(--light); line-height: 1.7;">
+        <p style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 300; color: var(--ink); line-height: 1.75;">
           We take one board seat per investment and stay deeply engaged through the first government contract. We don't write checks and disappear.
         </p>
       </div>
-      <div style="background: var(--carbon); padding: 48px 40px; display: flex; flex-direction: column; gap: 20px;">
-        <div class="criteria-item" style="display: flex; gap: 14px; font-size: 0.875rem; color: var(--light); align-items: flex-start;">
-          <span style="color: var(--ember); margin-top: 2px;">→</span>
-          <span>Direct introductions to DLA, OSD, and prime contractor procurement offices</span>
-        </div>
-        <div class="criteria-item" style="display: flex; gap: 14px; font-size: 0.875rem; color: var(--light); align-items: flex-start;">
-          <span style="color: var(--ember); margin-top: 2px;">→</span>
-          <span>CMMC and DFARS readiness support through our advisor network</span>
-        </div>
-        <div class="criteria-item" style="display: flex; gap: 14px; font-size: 0.875rem; color: var(--light); align-items: flex-start;">
-          <span style="color: var(--ember); margin-top: 2px;">→</span>
-          <span>Help structuring the first government contract and pricing model</span>
-        </div>
-        <div class="criteria-item" style="display: flex; gap: 14px; font-size: 0.875rem; color: var(--light); align-items: flex-start;">
-          <span style="color: var(--ember); margin-top: 2px;">→</span>
-          <span>Warm introductions to allied-nation procurement counterparts</span>
-        </div>
+      <div style="background: var(--warm-white); border: 1px solid var(--sand); padding: 44px 40px; display: flex; flex-direction: column; gap: 18px;">
+        <div class="criteria-item">Direct introductions to DLA, OSD, and prime contractor procurement offices</div>
+        <div class="criteria-item">CMMC and DFARS readiness support through our advisor network</div>
+        <div class="criteria-item">Help structuring the first government contract and pricing model</div>
+        <div class="criteria-item">Warm introductions to allied-nation procurement counterparts</div>
+        <div class="criteria-item">Go-to-market strategy for dual-use expansion beyond defense</div>
       </div>
     </div>
   </section>
