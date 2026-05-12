@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio — Fenix Capital Fund</title>
-  <meta name="description" content="Fenix Capital Fund portfolio companies — pre-seed defense and supply chain software." />
+  <meta name="description" content="Fenix Capital Fund portfolio — pre-seed defense and supply chain software companies." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
 </head>
@@ -25,23 +25,26 @@
     </div>
   </nav>
 
-  <!-- PAGE HERO -->
-  <section id="hero" style="min-height:50vh; padding-bottom: 60px;">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-tag">Portfolio Companies</div>
-    <h1 class="hero-headline" style="font-size: clamp(2.8rem, 6vw, 6rem);">
-      Building the<br><em>software layer</em><br>for defense.
-    </h1>
-    <p class="hero-sub" style="margin-top: 28px;">
-      We back pre-seed founders solving hard procurement, compliance, and coordination problems before the market catches on.
-    </p>
+  <!-- PAGE HERO with video -->
+  <section id="hero" style="min-height: 52vh; padding-bottom: 64px;">
+    <div class="video-bg">
+      <video autoplay muted loop playsinline>
+        <source src="https://videos.pexels.com/video-files/10391541/10391541-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="video-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Portfolio Companies</div>
+      <h1 class="hero-headline" style="font-size: clamp(2.8rem, 6vw, 6rem);">
+        Building the<br><em>software layer</em><br>for critical supply chains.
+      </h1>
+    </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- PORTFOLIO SECTION -->
-  <section id="portfolio" style="padding-top: 80px;">
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
     <div class="portfolio-intro">
       <div>
         <div class="section-tag">Active Portfolio</div>
@@ -49,63 +52,76 @@
       </div>
       <div>
         <p class="portfolio-desc">
-          Fenix backs companies at the earliest stage — typically pre-revenue or immediately post-first-contract. We look for founders with deep domain access who are solving problems they've lived firsthand.
+          Fenix backs companies at the earliest stage — typically pre-revenue or immediately post-first-contract. Our portfolio is dual-use and sector-transferable: built where the need is most acute, deployable wherever supply chains run.
         </p>
-        <div class="portfolio-criteria" style="margin-top: 24px;">
+        <div style="margin-top: 20px;">
           <div class="criteria-item">Software-native solution to a defense or supply chain problem</div>
           <div class="criteria-item">US or allied-nation founding team</div>
-          <div class="criteria-item">Pre-seed stage — typically first or second check in</div>
-          <div class="criteria-item">Defensible moat in data, compliance, or network effects</div>
+          <div class="criteria-item">Pre-seed stage — first or second check in</div>
+          <div class="criteria-item">Dual-use or sector-transferable architecture</div>
         </div>
       </div>
     </div>
 
     <div class="portfolio-grid">
-      <!-- Placeholder cards — replace with real companies -->
-      <div class="portfolio-card placeholder fade-in">
+
+      <!-- JMCB Tech — featured, real company -->
+      <div class="portfolio-card featured fade-in">
+        <div>
+          <div class="port-logo port-logo-featured">JM</div>
+          <div class="port-name">JMCB Tech</div>
+          <div class="port-desc">
+            Maritime supply chain compliance and operations platform giving port authorities, ministers of trade, and shipping operators real-time visibility into vessel compliance, downtime rates, and logistics performance via live API integrations. Deployed in Guyana — the US's fastest-growing energy and resource partner in the Western Hemisphere — with direct relevance to critical minerals and fuel supply chains that link allied nations to the US defense industrial base.
+          </div>
+        </div>
+        <div>
+          <div class="port-tag">Maritime · Compliance</div>
+          <div class="port-flag">🇬🇾 Guyana · 🇺🇸 US Allied Partner</div>
+        </div>
+      </div>
+
+      <!-- Placeholders -->
+      <div class="portfolio-card placeholder fade-in fade-in-delay-1">
         <div>
           <div class="port-logo"><div class="port-logo-inner"></div></div>
-          <div class="port-name">Company One</div>
-          <div class="port-desc">Placeholder — supply chain visibility software for Tier 2 defense manufacturers. Helps prime contractors track sub-supplier capacity and risk in real time.</div>
+          <div class="port-name">Portfolio Company</div>
+          <div class="port-desc">Supply chain visibility software for Tier 2 defense manufacturers. Gives prime contractors real-time insight into sub-supplier capacity, health, and risk.</div>
         </div>
         <div class="port-tag">Visibility</div>
       </div>
-      <div class="portfolio-card placeholder fade-in fade-in-delay-1">
-        <div>
-          <div class="port-logo"><div class="port-logo-inner"></div></div>
-          <div class="port-name">Company Two</div>
-          <div class="port-desc">Placeholder — compliance automation for small defense suppliers navigating CMMC and DFARS without a dedicated legal team.</div>
-        </div>
-        <div class="port-tag">Compliance</div>
-      </div>
+
       <div class="portfolio-card placeholder fade-in fade-in-delay-2">
         <div>
           <div class="port-logo"><div class="port-logo-inner"></div></div>
-          <div class="port-name">Company Three</div>
-          <div class="port-desc">Placeholder — allied procurement coordination platform enabling US and partner-nation defense agencies to source jointly under AUKUS and NATO frameworks.</div>
+          <div class="port-name">Portfolio Company</div>
+          <div class="port-desc">Compliance automation for small defense suppliers navigating CMMC and DFARS without a dedicated legal or compliance team.</div>
         </div>
-        <div class="port-tag">Allied Coordination</div>
+        <div class="port-tag">Compliance</div>
       </div>
+
       <div class="portfolio-card placeholder fade-in">
         <div>
           <div class="port-logo"><div class="port-logo-inner"></div></div>
-          <div class="port-name">Company Four</div>
-          <div class="port-desc">Placeholder — resilience modeling software that stress-tests critical material and component dependencies across the defense industrial base.</div>
+          <div class="port-name">Portfolio Company</div>
+          <div class="port-desc">Allied procurement coordination platform enabling US and partner-nation defense agencies to source jointly under AUKUS and NATO frameworks.</div>
         </div>
-        <div class="port-tag">Resilience</div>
+        <div class="port-tag">Allied Coordination</div>
       </div>
+
       <div class="portfolio-card placeholder fade-in fade-in-delay-1">
         <div>
           <div class="port-logo"><div class="port-logo-inner"></div></div>
-          <div class="port-name">Company Five</div>
-          <div class="port-desc">Placeholder — export control and ITAR workflow software for dual-use technology companies scaling into the defense market for the first time.</div>
+          <div class="port-name">Portfolio Company</div>
+          <div class="port-desc">Resilience modeling software that stress-tests critical material and component dependencies across the defense industrial base.</div>
         </div>
-        <div class="port-tag">Export Control</div>
+        <div class="port-tag">Resilience</div>
       </div>
-      <div class="portfolio-card placeholder fade-in fade-in-delay-2" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; opacity: 0.25;">
-        <div style="font-family:var(--font-display); font-size:3rem; font-weight:300; color:var(--ember); margin-bottom:12px;">+</div>
-        <div style="font-family:var(--font-mono); font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted);">Your company here</div>
+
+      <div class="portfolio-card placeholder fade-in fade-in-delay-2" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height: 240px;">
+        <div style="font-family:var(--font-display); font-size:2.5rem; font-weight:300; color:var(--ember); margin-bottom:10px;">+</div>
+        <div style="font-family:var(--font-mono); font-size:0.6rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--stone);">Your company here</div>
       </div>
+
     </div>
 
     <div class="portfolio-cta fade-in">
