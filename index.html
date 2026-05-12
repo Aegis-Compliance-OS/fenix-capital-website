@@ -25,44 +25,69 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO with video background -->
   <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
+    <!-- Background video: aerial cargo ship at sea -->
+    <div class="video-bg">
+      <video autoplay muted loop playsinline poster="https://images.pexels.com/videos/14807919/pictures/preview-0.jpg">
+        <source src="https://videos.pexels.com/video-files/14807919/14807919-uhd_2560_1440_24fps.mp4" type="video/mp4" />
+        <source src="https://videos.pexels.com/video-files/3840442/3840442-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="video-overlay"></div>
 
-    <div class="hero-tag">Pre-Seed · Washington, DC · Defense &amp; Supply Chain</div>
-
-    <h1 class="hero-headline">
-      Capital for<br><em>critical</em><br>infrastructure.
-    </h1>
-
-    <p class="hero-sub">
-      Backing founders building software for defense supply chains, compliance, and allied industrial coordination — before the rest of the market catches on.
-    </p>
-
-    <div class="hero-actions">
-      <a href="portfolio.html" class="btn-primary">View Portfolio →</a>
-      <a href="contact.html" class="btn-ghost">Pitch Us</a>
+    <!-- Software UI layer — suggests software running on top of physical world -->
+    <div class="video-ui-layer">
+      <div class="ui-panel ui-panel-1">
+        <div class="ui-label">Vessel Compliance</div>
+        <div class="ui-value">GY-PORT-004 · Active</div>
+        <div class="ui-bar"><div class="ui-bar-fill" style="width:82%"></div></div>
+      </div>
+      <div class="ui-panel ui-panel-2">
+        <div class="ui-label">Supply Chain Status</div>
+        <div class="ui-value">14 nodes · 2 alerts</div>
+        <div class="ui-dots">
+          <div class="ui-dot active"></div>
+          <div class="ui-dot active"></div>
+          <div class="ui-dot active"></div>
+          <div class="ui-dot"></div>
+          <div class="ui-dot active"></div>
+        </div>
+      </div>
+      <div class="ui-panel ui-panel-3">
+        <div class="ui-label">CMMC Status</div>
+        <div class="ui-value">Level 2 · Verified</div>
+        <div class="ui-bar"><div class="ui-bar-fill" style="width:100%; animation: none;"></div></div>
+      </div>
     </div>
 
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hero-stat-num"><sup>$</sup>5MM</div>
-        <div class="hero-stat-label">Fund Size</div>
+    <div class="hero-content">
+      <div class="hero-tag">Pre-Seed Fund · Washington, DC · Defense &amp; Supply Chain</div>
+      <h1 class="hero-headline">
+        Capital for<br><em>critical</em><br>infrastructure.
+      </h1>
+      <p class="hero-sub">
+        Backing founders building software for defense supply chains, compliance, and allied industrial coordination — before the rest of the market catches on.
+      </p>
+      <div class="hero-actions">
+        <a href="portfolio.html" class="btn-primary">View Portfolio →</a>
+        <a href="contact.html" class="btn-ghost-light">Pitch Us</a>
       </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num">3</div>
-        <div class="hero-stat-label">DLA Deals Advised</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num">40<sup>+</sup></div>
-        <div class="hero-stat-label">Sector Companies Advised</div>
-      </div>
-    </div>
 
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num"><sup>$</sup>5MM</div>
+          <div class="hero-stat-label">Fund Size</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">3</div>
+          <div class="hero-stat-label">DLA Deals Advised</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">40<sup>+</sup></div>
+          <div class="hero-stat-label">Sector Companies Advised</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -77,9 +102,9 @@
       <div class="thesis-body fade-in">
         <p>The defense supply chain is undergoing a generational shift. Decades of fragmentation, analog workflows, and single-source dependencies have created a critical vulnerability — one that software can fix.</p>
         <br>
-        <p>Fenix Capital backs <strong>pre-seed founders</strong> building the software layer that makes the US and allied defense industrial base faster, more transparent, and more resilient.</p>
+        <p>Fenix backs <strong>pre-seed founders</strong> building the software layer that makes the US and allied defense industrial base faster, more transparent, and more resilient.</p>
         <br>
-        <p>We write <strong>first checks</strong> into companies solving real procurement, compliance, and coordination problems — before they're obvious.</p>
+        <p>Our portfolio companies are <strong>dual-use and sector-transferable</strong> — built for defense, deployable across any critical supply chain. We start where the need is highest and the market is least crowded.</p>
       </div>
 
       <div class="thesis-pillars">
@@ -87,14 +112,14 @@
           <div class="pillar-num">01</div>
           <div>
             <div class="pillar-title">Supply Chain Visibility</div>
-            <div class="pillar-desc">Software that gives DoD buyers and prime contractors real-time insight into Tier 2/3 supplier health, capacity, and risk.</div>
+            <div class="pillar-desc">Real-time insight into Tier 2/3 supplier health, capacity, and risk — for both DoD buyers and prime contractors.</div>
           </div>
         </div>
         <div class="pillar fade-in fade-in-delay-2">
           <div class="pillar-num">02</div>
           <div>
             <div class="pillar-title">Compliance &amp; Regulatory Tech</div>
-            <div class="pillar-desc">Tools that make CMMC, ITAR, FAR/DFARS, and export control manageable for suppliers who can't afford dedicated compliance teams.</div>
+            <div class="pillar-desc">CMMC, ITAR, FAR/DFARS, and export control made manageable for suppliers without dedicated compliance teams.</div>
           </div>
         </div>
         <div class="pillar fade-in fade-in-delay-3">
@@ -108,14 +133,26 @@
           <div class="pillar-num">04</div>
           <div>
             <div class="pillar-title">Allied Industrial Coordination</div>
-            <div class="pillar-desc">Software enabling trusted US and allied partners — Five Eyes, NATO, AUKUS — to coordinate production and procurement at speed.</div>
+            <div class="pillar-desc">Software enabling US and allied partners — Five Eyes, NATO, AUKUS — to coordinate production and procurement at speed.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="divider"></div>
+  <!-- VIDEO INTERLUDE — logistics/port at night -->
+  <div id="supply-chain-video">
+    <video autoplay muted loop playsinline poster="https://images.pexels.com/videos/3840442/pictures/preview-0.jpg">
+      <source src="https://videos.pexels.com/video-files/3840442/3840442-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+    </video>
+    <div class="scv-overlay">
+      <div class="scv-content">
+        <div class="scv-tag">Dual-Use · Sector-Transferable</div>
+        <h3 class="scv-headline">Physical chains.<br><em>Software intelligence.</em></h3>
+        <p class="scv-body">Every ship, plane, and truck in the global supply chain runs on invisible software infrastructure. We back the founders building that layer — starting with defense, expanding everywhere.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- EDGE -->
   <section id="edge">
@@ -126,19 +163,19 @@
       <div class="edge-card fade-in">
         <div class="edge-icon">⬡</div>
         <div class="edge-title">DLA Deal Experience</div>
-        <div class="edge-desc">We've advised on 3 Defense Logistics Agency transactions — giving us a ground-level view of how DoD procurement actually works and where software creates leverage.</div>
+        <div class="edge-desc">We've advised on 3 Defense Logistics Agency transactions — giving us ground-level insight into how DoD procurement actually works and where software creates the most leverage.</div>
         <div class="edge-num">01</div>
       </div>
       <div class="edge-card fade-in fade-in-delay-1">
         <div class="edge-icon">◈</div>
         <div class="edge-title">40+ Sector Relationships</div>
-        <div class="edge-desc">Advisory work across more than 40 defense and supply chain companies means we understand buyer pain, not just founder pitch decks. We know what contracts look like from the inside.</div>
+        <div class="edge-desc">Advisory work across 40+ defense and supply chain companies means we understand real buyer pain — not just pitch decks. We know what government contracts look like from the inside.</div>
         <div class="edge-num">02</div>
       </div>
       <div class="edge-card fade-in fade-in-delay-2">
         <div class="edge-icon">◎</div>
         <div class="edge-title">DC-Native Network</div>
-        <div class="edge-desc">Based in Washington, we're embedded in the policy, procurement, and program office relationships that matter for defense software companies trying to win their first government contract.</div>
+        <div class="edge-desc">Based in Washington, we're embedded in the policy, procurement, and program office relationships that matter for defense software companies winning their first government contract.</div>
         <div class="edge-num">03</div>
       </div>
     </div>
