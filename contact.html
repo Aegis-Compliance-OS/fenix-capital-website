@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Fenix Capital Fund</title>
+  <meta name="description" content="Pitch Fenix Capital Fund or get in touch. We back pre-seed defense and supply chain software startups." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="nav-logo">Fenix<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#thesis">Thesis</a></li>
+      <li><a href="index.html#edge">Our Edge</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section id="hero" style="min-height: 40vh; padding-bottom: 60px;">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-tag">Get in Touch</div>
+    <h1 class="hero-headline" style="font-size: clamp(2.8rem, 6vw, 6rem);">
+      Let's talk about<br>what you're <em>building.</em>
+    </h1>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" style="padding-top: 80px; background: var(--carbon);">
+    <div class="contact-layout">
+
+      <div class="contact-info">
+        <div>
+          <div class="section-tag">Reach Us</div>
+          <h2 class="section-title" style="font-size: 2.5rem;">Washington, DC<br><em>— always on.</em></h2>
+        </div>
+
+        <div>
+          <div class="contact-block-label">General Inquiries</div>
+          <a href="mailto:hello@fenixcapitalfund.com" class="contact-block-val">hello@fenixcapitalfund.com</a>
+        </div>
+
+        <div>
+          <div class="contact-block-label">Pitch &amp; Investment</div>
+          <a href="mailto:invest@fenixcapitalfund.com" class="contact-block-val">invest@fenixcapitalfund.com</a>
+        </div>
+
+        <div>
+          <div class="contact-block-label">Location</div>
+          <div class="contact-block-val" style="cursor: default;">Washington, DC</div>
+        </div>
+
+        <div style="padding: 28px; background: var(--off-black); border: 1px solid var(--steel);">
+          <div class="contact-block-label" style="margin-bottom: 12px;">What We're Looking For</div>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; gap: 12px; font-size: 0.8rem; color: var(--subtle);">
+              <span style="color: var(--ember);">→</span>
+              <span>Pre-seed stage (first or second check)</span>
+            </div>
+            <div style="display: flex; gap: 12px; font-size: 0.8rem; color: var(--subtle);">
+              <span style="color: var(--ember);">→</span>
+              <span>Software-native solution, not hardware or services</span>
+            </div>
+            <div style="display: flex; gap: 12px; font-size: 0.8rem; color: var(--subtle);">
+              <span style="color: var(--ember);">→</span>
+              <span>Defense supply chain, compliance, or allied coordination</span>
+            </div>
+            <div style="display: flex; gap: 12px; font-size: 0.8rem; color: var(--subtle);">
+              <span style="color: var(--ember);">→</span>
+              <span>US or allied-nation team</span>
+            </div>
+            <div style="display: flex; gap: 12px; font-size: 0.8rem; color: var(--subtle);">
+              <span style="color: var(--ember);">→</span>
+              <span>Founder-led, direct domain expertise</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <div class="section-tag">Send a Message</div>
+        <p style="font-size: 0.875rem; color: var(--subtle); margin-bottom: 32px; line-height: 1.7;">
+          Fill out the form below and we'll respond within 48 hours. If you're pitching, please include a brief description of what you're building and why now.
+        </p>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company" placeholder="Acme Defense Inc." />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@yourcompany.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="type">Inquiry Type</label>
+            <select id="type" name="type">
+              <option value="Founder Pitch">Founder Pitch</option>
+              <option value="LP Inquiry">LP Inquiry</option>
+              <option value="Partnership / Advisor">Partnership / Advisor</option>
+              <option value="Press / Media">Press / Media</option>
+              <option value="General">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what you're building and why it matters..."></textarea>
+          </div>
+
+          <p class="form-note">
+            We respond to every founder inquiry. All pitches are reviewed by a partner, not screened by an analyst.
+          </p>
+
+          <button type="submit" class="btn-primary" style="width: fit-content;">Send Message →</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Fenix<span>.</span>Capital</div>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-copy">© 2026 Fenix Capital Fund. Washington, DC.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
