@@ -39,29 +39,63 @@
   </div>
   <div class="video-overlay"></div>
 
-  <!-- Floating UI panels -->
-  <div class="video-ui-layer">
-    <div class="ui-panel ui-panel-1">
-      <div class="ui-label">Vessel Compliance</div>
-      <div class="ui-value">GY-PORT-004 · Active</div>
-      <div class="ui-bar"><div class="ui-bar-fill" style="width:82%"></div></div>
-    </div>
-    <div class="ui-panel ui-panel-2">
-      <div class="ui-label">Supply Chain Status</div>
-      <div class="ui-value">14 nodes · 2 alerts</div>
-      <div class="ui-dots">
-        <div class="ui-dot active"></div>
-        <div class="ui-dot active"></div>
-        <div class="ui-dot active"></div>
-        <div class="ui-dot"></div>
-        <div class="ui-dot active"></div>
+  <!-- Software integration overlay -->
+  <div class="sw-overlay">
+    <!-- Scan line -->
+    <div class="scan-line"></div>
+
+    <!-- Animated network graph -->
+    <svg class="network-svg" viewBox="0 0 900 500" preserveAspectRatio="xMidYMid slice">
+      <!-- Connection lines -->
+      <line class="net-line" x1="720" y1="120" x2="820" y2="200" />
+      <line class="net-line" x1="820" y1="200" x2="780" y2="320" />
+      <line class="net-line" x1="780" y1="320" x2="700" y2="390" />
+      <line class="net-line" x1="700" y1="390" x2="820" y2="200" />
+      <line class="net-line" x1="720" y1="120" x2="780" y2="320" />
+      <!-- Nodes -->
+      <circle class="net-node" cx="720" cy="120" r="5" />
+      <circle class="net-node pulse-slow" cx="820" cy="200" r="7" />
+      <circle class="net-node" cx="780" cy="320" r="5" />
+      <circle class="net-node pulse-fast" cx="700" cy="390" r="6" />
+      <!-- Pulse rings -->
+      <circle class="net-ring" cx="820" cy="200" r="14" />
+      <circle class="net-ring ring-2" cx="700" cy="390" r="12" />
+    </svg>
+
+    <!-- HUD panels - right side -->
+    <div class="hud-stack">
+      <div class="hud-panel">
+        <div class="hud-label">CMMC Compliance</div>
+        <div class="hud-value">Level 2 · <span class="hud-green">Verified</span></div>
+        <div class="hud-bar"><div class="hud-bar-fill" style="width:100%"></div></div>
+      </div>
+      <div class="hud-panel">
+        <div class="hud-label">Supply Chain Nodes</div>
+        <div class="hud-value">14 active · <span class="hud-amber">2 alerts</span></div>
+        <div class="hud-dots">
+          <span class="hud-dot on"></span><span class="hud-dot on"></span>
+          <span class="hud-dot on"></span><span class="hud-dot off"></span>
+          <span class="hud-dot on"></span><span class="hud-dot on"></span>
+        </div>
+      </div>
+      <div class="hud-panel">
+        <div class="hud-label">Contract Intelligence</div>
+        <div class="hud-value">FAR · DFARS · ITAR</div>
+        <div class="hud-bar"><div class="hud-bar-fill" style="width:74%"></div></div>
+      </div>
+      <div class="hud-panel hud-terminal">
+        <div class="hud-label">Procurement Signal</div>
+        <div class="terminal-line"><span class="t-cursor">›</span> DLA RFP matched · 3 vendors</div>
+        <div class="terminal-line"><span class="t-cursor">›</span> CMMC gap: 0 critical</div>
+        <div class="terminal-line blink"><span class="t-cursor">›</span> Route optimized_</div>
       </div>
     </div>
-    <div class="ui-panel ui-panel-3">
-      <div class="ui-label">CMMC Status</div>
-      <div class="ui-value">Level 2 · Verified</div>
-      <div class="ui-bar"><div class="ui-bar-fill" style="width:100%; animation:none;"></div></div>
-    </div>
+
+    <!-- Corner bracket markers -->
+    <div class="corner-mark tl"></div>
+    <div class="corner-mark tr"></div>
+    <div class="corner-mark bl"></div>
+    <div class="corner-mark br"></div>
   </div>
 
   <div class="hero-content">
@@ -144,9 +178,47 @@
 <div id="supply-chain-video">
   <video autoplay muted loop playsinline>
     <source src="videos/shipping-containers.mp4" type="video/mp4" />
-    <!-- Fallback stream -->
     <source src="https://videos.pexels.com/video-files/3840442/3840442-uhd_2560_1440_25fps.mp4" type="video/mp4" />
   </video>
+
+  <!-- Tracking overlay -->
+  <div class="track-overlay">
+    <svg class="track-svg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+      <!-- Route path -->
+      <polyline class="route-path" points="150,380 280,300 420,260 580,240 740,220 900,200 1050,180" />
+      <!-- Tracking markers -->
+      <g class="track-marker" style="transform:translate(280px,300px)">
+        <circle r="8" class="track-dot" />
+        <circle r="18" class="track-ring" />
+      </g>
+      <g class="track-marker" style="transform:translate(580px,240px)">
+        <circle r="8" class="track-dot" />
+        <circle r="18" class="track-ring" />
+      </g>
+      <g class="track-marker active-marker" style="transform:translate(900px,200px)">
+        <circle r="10" class="track-dot active-dot" />
+        <circle r="22" class="track-ring" />
+        <circle r="34" class="track-ring ring-outer" />
+      </g>
+    </svg>
+
+    <!-- Tracking data panels -->
+    <div class="track-panel track-panel-a">
+      <div class="hud-label">Origin · Baltimore, MD</div>
+      <div class="hud-value"><span class="hud-green">Departed</span> · 06:14 EST</div>
+    </div>
+    <div class="track-panel track-panel-b">
+      <div class="hud-label">Active Vessel</div>
+      <div class="hud-value">MV FENIX-7 · <span class="hud-amber">En Route</span></div>
+      <div class="terminal-line"><span class="t-cursor">›</span> ITAR cleared</div>
+      <div class="terminal-line"><span class="t-cursor">›</span> Manifest verified</div>
+    </div>
+    <div class="track-panel track-panel-c">
+      <div class="hud-label">Destination · Rotterdam</div>
+      <div class="hud-value">ETA 14 days · <span class="hud-green">On schedule</span></div>
+    </div>
+  </div>
+
   <div class="scv-overlay">
     <div class="scv-content">
       <div class="scv-tag">Dual-Use · Sector-Transferable</div>
