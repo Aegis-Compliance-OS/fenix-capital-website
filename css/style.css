@@ -390,6 +390,13 @@ nav {
   color: var(--gold-light);
 }
 
+.card-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1.2rem;
+  opacity: 0.85;
+}
+
 /* ─── SOFTWARE OVERLAY (HERO) ───────────────────────────────── */
 .sw-overlay {
   position: absolute;
