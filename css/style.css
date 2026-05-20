@@ -1373,10 +1373,10 @@ footer {
   .ui-panel-2 { display: none; }
 }
 
-/* ── Fenix edge section */
+/* ── Section ─────────────────────────────────────────────── */
 .fenix-edge-section {
   position: relative;
-  background: var(--fenix-navy);
+  background: #0a1628;
   padding: 120px 8vw 140px;
   overflow: hidden;
 }
@@ -1407,42 +1407,46 @@ footer {
   margin: 0 auto;
 }
 
+/* ── Label ───────────────────────────────────────────────── */
 .fenix-edge-label {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.67rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--fenix-gold);
+  color: #c5973a;
   margin-bottom: 1.6rem;
 }
 
+/* ── Headline ────────────────────────────────────────────── */
 .fenix-edge-headline {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   font-size: clamp(2.6rem, 5.5vw, 4.8rem);
   line-height: 1.06;
-  color: var(--fenix-white);
+  color: #ffffff;
   margin-bottom: 1.8rem;
   max-width: 820px;
 }
 
 .fenix-edge-headline em {
   font-style: italic;
-  color: var(--fenix-gold);
+  color: #c5973a;
 }
 
+/* ── Sub ─────────────────────────────────────────────────── */
 .fenix-edge-sub {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 400;
   font-size: clamp(1rem, 1.8vw, 1.25rem);
   line-height: 1.65;
-  color: var(--fenix-off);
+  color: #dce8f0;
   max-width: 620px;
   margin-bottom: 5rem;
   opacity: 0.85;
 }
 
+/* ── Grid ────────────────────────────────────────────────── */
 .fenix-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1451,38 +1455,38 @@ footer {
   border: 1px solid rgba(197,151,58,0.15);
 }
 
+/* ── Card ────────────────────────────────────────────────── */
 .fenix-card {
   position: relative;
-  background: var(--fenix-navy-mid);
+  background: #0e1f3a;
   padding: 3rem 2.4rem 3.2rem;
   overflow: hidden;
   transition: background 0.35s ease;
 }
 
+.fenix-card:hover {
+  background: #132240;
+}
+
+/* Gold top-bar on hover */
 .fenix-card-accent {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   height: 2px;
-  background: var(--fenix-gold);
+  background: #c5973a;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
-.fenix-card:hover {
-  background: var(--fenix-navy-lt);
-}
-
 .fenix-card:hover .fenix-card-accent {
   transform: scaleX(1);
 }
 
+/* ── Icon — GOLD ─────────────────────────────────────────── */
 .fenix-card-icon {
   width: 34px;
   height: 34px;
-  color: var(--fenix-gold);
+  color: #c5973a;
   margin-bottom: 1.6rem;
   opacity: 0.9;
 }
@@ -1492,44 +1496,47 @@ footer {
   height: 100%;
 }
 
+/* ── Number — GOLD ───────────────────────────────────────── */
 .fenix-card-num {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.62rem;
   letter-spacing: 0.2em;
-  color: var(--fenix-gold);
+  color: #c5973a;
   text-transform: uppercase;
   margin-bottom: 0.9rem;
   opacity: 0.7;
 }
 
+/* ── Title — GOLD ────────────────────────────────────────── */
 .fenix-card-title {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   font-size: clamp(1.25rem, 1.8vw, 1.55rem);
   line-height: 1.2;
-  color: var(--fenix-white);
+  color: #c5973a;
   margin-bottom: 1.1rem;
 }
 
+/* ── Body ────────────────────────────────────────────────── */
 .fenix-card-body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 0.84rem;
   line-height: 1.75;
-  color: var(--fenix-muted);
+  color: rgba(220,232,240,0.55);
 }
 
+/* ── Bottom rule ────────────────────────────────────────── */
 .fenix-card-rule {
   position: absolute;
-  bottom: 0;
-  left: 2.4rem;
-  right: 2.4rem;
+  bottom: 0; left: 2.4rem; right: 2.4rem;
   height: 1px;
-  background: linear-gradient(90deg, var(--fenix-gold) 0%, transparent 100%);
+  background: linear-gradient(90deg, #c5973a 0%, transparent 100%);
   opacity: 0.2;
 }
 
+/* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 900px) {
   .fenix-cards-grid {
     grid-template-columns: 1fr;

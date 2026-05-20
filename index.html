@@ -254,24 +254,20 @@
 <section class="fenix-edge-section" id="why-fenix">
   <div class="fenix-edge-inner">
 
-    <!-- Eyebrow label -->
     <p class="fenix-edge-label">Deal Flow &amp; Track Record</p>
 
-    <!-- Main headline -->
     <h2 class="fenix-edge-headline">
       An edge built on <em>real</em> deals and domain expertise.
     </h2>
 
-    <!-- Subtext -->
     <p class="fenix-edge-sub">
       Fenix Capital's network has been inside the decisions — not watching from the sidelines.
       That access translates directly into sourcing, credibility, and portfolio value.
     </p>
 
-    <!-- Three cards -->
     <div class="fenix-cards-grid">
 
-      <!-- Card 1: DLA Deal Flow -->
+      <!-- Card 1 -->
       <div class="fenix-card fenix-card--1">
         <div class="fenix-card-accent"></div>
         <div class="fenix-card-icon">
@@ -284,14 +280,14 @@
         <div class="fenix-card-num">01</div>
         <h3 class="fenix-card-title">$20M+ in DLA Deal Flow</h3>
         <p class="fenix-card-body">
-          Fenix's network has directly supported Defense Logistics Agency contract activity 
-          exceeding $20 million — giving our portfolio companies a credible pathway into one 
+          Fenix's network has directly supported Defense Logistics Agency contract activity
+          exceeding $20 million — giving our portfolio companies a credible pathway into one
           of the U.S. government's largest procurement engines.
         </p>
         <div class="fenix-card-rule"></div>
       </div>
 
-      <!-- Card 2: Allied Nations -->
+      <!-- Card 2 -->
       <div class="fenix-card fenix-card--2">
         <div class="fenix-card-accent"></div>
         <div class="fenix-card-icon">
@@ -305,14 +301,14 @@
         <div class="fenix-card-num">02</div>
         <h3 class="fenix-card-title">Cross-Border Allied Nation Relationships</h3>
         <p class="fenix-card-body">
-          Active relationships with investment promotion agencies, ministers, and trade corridor 
+          Active relationships with investment promotion agencies, ministers, and trade corridor
           operators across Guyana, the U.S. Virgin Islands, South Korea, and 24 Caribbean nations —
           turning allied-nation governments into customer pipelines for our portfolio.
         </p>
         <div class="fenix-card-rule"></div>
       </div>
 
-      <!-- Card 3: Domain Expertise -->
+      <!-- Card 3 -->
       <div class="fenix-card fenix-card--3">
         <div class="fenix-card-accent"></div>
         <div class="fenix-card-icon">
@@ -326,16 +322,17 @@
         <div class="fenix-card-num">03</div>
         <h3 class="fenix-card-title">50+ Years of Domain Expertise</h3>
         <p class="fenix-card-body">
-          Our team and advisor network bring combined experience across the U.S. military, 
-          logistics and supply chain operations, and enterprise technology — from theater-level 
+          Our team and advisor network bring combined experience across the U.S. military,
+          logistics and supply chain operations, and enterprise technology — from theater-level
           Army logistics command to DoD TS/SCI-cleared program management.
         </p>
         <div class="fenix-card-rule"></div>
       </div>
 
-    </div><!-- /.fenix-cards-grid -->
-  </div><!-- /.fenix-edge-inner -->
+    </div>
+  </div>
 </section>
+
 
 <div class="divider"></div>
 
@@ -360,15 +357,16 @@
     cards.forEach(function (card, i) {
       card.style.opacity = '0';
       card.style.transform = 'translateY(28px)';
-      card.style.transition = 'opacity 0.7s ease ' + (0.1 + i * 0.15) + 's, transform 0.7s ease ' + (0.1 + i * 0.15) + 's';
+      card.style.transition =
+        'opacity 0.7s ease ' + (0.1 + i * 0.15) + 's, ' +
+        'transform 0.7s ease ' + (0.1 + i * 0.15) + 's, ' +
+        'background 0.35s ease';
     });
 
     function revealCards() {
       var section = document.getElementById('why-fenix');
       if (!section) { showAll(); return; }
-
-      var rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.88) {
+      if (section.getBoundingClientRect().top < window.innerHeight * 0.88) {
         showAll();
         window.removeEventListener('scroll', revealCards);
       }
