@@ -26,7 +26,20 @@
   </nav>
 
   <!-- PAGE HERO -->
-  <section id="hero" style="min-height: 40vh; padding-bottom: 60px;">
+  <section id="hero" class="fenix-cta-section" style="min-height: 40vh; padding-bottom: 60px;">
+    <div class="fenix-cta-video-wrap">
+      <video
+        class="fenix-cta-video"
+        src="videos/15458596_1920_1080_25fps.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+      ></video>
+      <div class="fenix-cta-overlay"></div>
+    </div>
     <div class="hero-bg"></div>
     <div class="hero-grid"></div>
     <div class="hero-tag">Get in Touch</div>
@@ -133,5 +146,14 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+  (function () {
+    var ctaVideo = document.querySelector('.fenix-cta-video');
+    if (!ctaVideo) return;
+    document.addEventListener('visibilitychange', function () {
+      document.hidden ? ctaVideo.pause() : ctaVideo.play().catch(function(){});
+    });
+  })();
+  </script>
 </body>
 </html>
