@@ -1348,6 +1348,35 @@ footer {
   letter-spacing: 0.04em;
 }
 
+.footer-funds {
+  flex-basis: 100%;
+  order: -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--navy-border);
+}
+
+.footer-funds-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.footer-funds a {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  transition: color var(--transition);
+}
+.footer-funds a:hover { color: var(--gold-light); }
+
 /* ─── ANIMATIONS ────────────────────────────────────────────── */
 .fade-in {
   opacity: 0;
