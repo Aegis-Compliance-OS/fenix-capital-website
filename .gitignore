@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+*.bak
+css/*.bak
+
+# Internal working docs — never publish to the deployed site
+VERSION_COMPARISON.md
+Embassy_Emails_Lithuania_Poland.md
+
+# Confidential business / legal documents — never publish
+Fenix_Capital_Fund_Overview_Event_Brief.pdf
+Fenix_Capital_SSBCI_Founder_Brief.pdf
+JMCB_Tech_Investee_Agreement_SAFE.pdf
