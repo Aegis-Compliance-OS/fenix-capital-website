@@ -64,16 +64,13 @@
           <div class="fenix-pcard-accent"></div>
 
           <div class="fenix-pcard-vid-wrap">
-            <video
+            <!-- TODO: replace with an autonomous-systems / drone clip when available -->
+            <img
+              src="images/dc-skyline.jpg"
+              alt="Autonomous systems and swarm coordination"
               class="fenix-pcard-video"
-              src="videos/UAV_swarm.mp4"
-              autoplay
-              muted
-              loop
-              playsinline
-              preload="metadata"
-              aria-hidden="true"
-            ></video>
+              loading="lazy"
+            />
             <div class="fenix-pcard-vid-overlay"></div>
           </div>
 
@@ -301,7 +298,7 @@
       if (section.getBoundingClientRect().top < window.innerHeight * 0.88) {
         showAll();
         document.querySelectorAll('.fenix-pcard-video').forEach(function (v) {
-          v.play().catch(function () {});
+          if (typeof v.play === 'function') v.play().catch(function () {});
         });
         window.removeEventListener('scroll', revealCards);
       }
@@ -316,6 +313,7 @@
 
     document.addEventListener('visibilitychange', function () {
       document.querySelectorAll('.fenix-pcard-video').forEach(function (v) {
+        if (typeof v.play !== 'function') return;
         document.hidden ? v.pause() : v.play().catch(function () {});
       });
     });
