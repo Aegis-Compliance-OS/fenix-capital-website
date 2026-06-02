@@ -1674,6 +1674,58 @@ footer {
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   FAQ
+   ═══════════════════════════════════════════════════════════════ */
+.fenix-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: rgba(197,151,58,0.15);
+  border: 1px solid rgba(197,151,58,0.15);
+  margin-top: 52px;
+}
+
+.fenix-faq-item {
+  background: var(--navy);
+  padding: 2.4rem 2.2rem;
+  transition: background var(--transition);
+}
+
+.fenix-faq-item:hover {
+  background: var(--navy-mid);
+}
+
+.fenix-faq-q {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--gold-border);
+}
+
+.fenix-faq-a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.fenix-faq-a strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+  .fenix-faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
    NEWS PAGE
    ═══════════════════════════════════════════════════════════════ */
 
