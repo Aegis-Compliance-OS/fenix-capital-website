@@ -30,17 +30,28 @@
   </nav>
 
   <!-- PAGE HERO -->
-  <section id="hero" style="min-height:50vh; padding-bottom: 60px;">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-tag">Our Funds</div>
-    <h1 class="hero-headline" style="font-size: clamp(2.8rem, 6vw, 6rem);">
-      Four funds,<br><em>one</em><br>mission.
-    </h1>
-    <p class="hero-sub" style="margin-top: 28px;">
-      Fenix Capital now manages four funds — from our flagship defense and supply chain strategy
-      to dedicated vehicles for critical minerals and fintech.
-    </p>
+  <section id="hero" class="hero-photo" style="min-height:62vh; height:65vh;">
+
+    <!-- DC video background — falls back to dc-skyline.jpg poster -->
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline poster="images/dc-skyline.jpg"
+             style="width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:0.55;">
+        <source src="videos/reflecting-pool.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="video-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Our Funds</div>
+      <h1 class="hero-headline" style="font-size: clamp(2.8rem, 6vw, 6rem);">
+        Four funds,<br><em>one</em><br>mission.
+      </h1>
+      <p class="hero-sub" style="margin-top: 28px;">
+        Fenix Capital now manages four funds — from our flagship defense and supply chain strategy
+        to dedicated vehicles for critical minerals and fintech.
+      </p>
+    </div>
+
   </section>
 
   <div class="divider"></div>
