@@ -6,6 +6,10 @@ css/*.bak
 # Internal working docs — never publish to the deployed site
 VERSION_COMPARISON.md
 Embassy_Emails_Lithuania_Poland.md
+Mailchimp + LinkedIn Setup Guide.md
+
+# Heavy source media — compressed web versions are committed instead
+videos/Reflecting Pool.mp4
 
 # Confidential business / legal documents — never publish
 Fenix_Capital_Fund_Overview_Event_Brief.pdf
