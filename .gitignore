@@ -14,6 +14,10 @@ videos/Reflecting Pool.mp4
 # Marketing collateral (not website assets) — keep local only
 images/fenix-capital-linkedin-banner.png
 
+# Internal business docs — never publish to the deployed site
+Allied_Innovation_Summit_Prospect_List.xlsx
+DC_SSBCI_Program_Brief_Fenix.docx
+
 # Confidential business / legal documents — never publish
 Fenix_Capital_Fund_Overview_Event_Brief.pdf
 Fenix_Capital_SSBCI_Founder_Brief.pdf
